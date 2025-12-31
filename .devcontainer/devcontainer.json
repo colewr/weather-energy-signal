@@ -1,0 +1,20 @@
+{
+ "name": "weather-energy-signal",
+ "build": {"dockerfile": "Dockerfile"},
+ "customizations": {
+  "vscode": {
+   "settings": {
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "editor.formatOnSave": true
+   },
+   "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-azuretools.vscode-docker"
+   ]
+  }
+ },
+ "postCreateCommand": "pip install -r requirements-dev.txt"
+}
